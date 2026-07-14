@@ -1,85 +1,239 @@
 # Project Recall
 
-Project Recall is an AI-powered research workspace being developed to help students and researchers quickly regain context after returning to an ongoing project.
+> **An AI-powered research workspace that helps students and researchers instantly regain project context after returning to an ongoing project.**
 
-By analyzing research papers, notes, and supporting documents, Project Recall aims to reduce the time spent reconstructing previous work and help users continue where they left off.
+🚀 **Project Recall** is being built as part of the **ML Empowerment Build Challenge**, with the vision of growing beyond a hackathon MVP into a production-ready AI research assistant.
 
----
-
-## Problem Statement
-
-Research projects often span weeks or months. After stepping away from a project, researchers frequently spend significant time trying to remember:
-
-- What they were working on
-- Which papers they have already reviewed
-- Previous findings and observations
-- Pending tasks and next steps
-
-This process is repetitive, time-consuming, and interrupts productivity.
+Instead of spending hours trying to remember previous progress, Project Recall reconstructs project context from research papers, notes, and supporting documents—allowing users to continue their work exactly where they left off.
 
 ---
 
-## Proposed Solution
+# 📖 Table of Contents
 
-Project Recall is being developed to provide an intelligent workspace where users can upload research-related documents and receive AI-assisted support to quickly understand the current state of their project.
+* [Problem Statement](#-problem-statement)
+* [Our Solution](#-our-solution)
+* [Hackathon MVP](#-hackathon-mvp)
+* [Technology Stack](#-technology-stack)
+* [Current Project Status](#-current-project-status)
+* [Repository Structure](#-repository-structure)
+* [Getting Started](#-getting-started)
+* [Roadmap](#-roadmap)
+* [Vision Beyond the Hackathon](#-vision-beyond-the-hackathon)
+* [Author](#-author)
+
+---
+
+# 🎯 Problem Statement
+
+Research projects often span weeks or even months. After returning to a project following a break, researchers and students frequently spend valuable time trying to answer questions such as:
+
+* What was I working on?
+* Which papers have I already reviewed?
+* What conclusions have I already reached?
+* What remains unfinished?
+* What should I do next?
+
+Although existing AI tools can answer questions about individual documents, they generally lack an understanding of the overall progress and context of an entire research project.
+
+This repeated process of reconstructing context interrupts productivity and slows research.
+
+---
+
+# 💡 Our Solution
+
+Project Recall aims to function as an intelligent **project memory**.
+
+Instead of simply answering questions from uploaded files, it analyzes research documents to understand the overall state of a project and helps users quickly resume meaningful work.
 
 The long-term vision includes:
 
-- Document organization
-- Context reconstruction
-- Semantic document search
-- AI-generated project summaries
-- Context-aware next-step recommendations
+* 📄 Intelligent document ingestion
+* 🧠 AI-powered context reconstruction
+* 🔍 Semantic document search
+* 📚 Research memory across multiple documents
+* ✨ Automatic project summaries
+* ✅ Context-aware next-step recommendations
 
 ---
 
-## MVP Objectives
+# 🏆 Hackathon MVP
 
-The initial version of Project Recall will focus on:
+The initial MVP focuses on validating the core concept through the following workflow:
 
-- Uploading PDF documents
-- Extracting document text
-- Searching documents using semantic search
-- Generating concise project summaries
-- Suggesting logical next steps
-
----
-
-## Current Status
-
-**Phase:** Project Initialization
-
-### Completed
-
-- ✅ Hackathon registration
-- ✅ GitHub repository created
-- ✅ Local development environment configured
-- ✅ Initial project documentation
-
-### Next Milestone
-
-- Build the document upload feature.
+* Upload research PDFs
+* Extract document text
+* Process uploaded content
+* Search documents semantically
+* Generate an AI-powered project summary
+* Recommend the next logical action
 
 ---
 
-## Repository Structure
+# 🛠️ Technology Stack
 
-```
+## Backend
+
+* Python 3.11
+* FastAPI
+* Uvicorn
+
+## Development
+
+* Git
+* GitHub
+* Python Virtual Environment (`venv`)
+
+## AI (Planned)
+
+* Google Gemma 3n
+* Vector Embeddings
+* Semantic Search
+
+---
+
+# 📈 Current Project Status
+
+### ✅ Completed
+
+* Project planning
+* Hackathon registration
+* GitHub repository setup
+* Professional project documentation
+* Backend development environment
+* Python virtual environment
+* FastAPI backend initialization
+* First REST API endpoint
+* Automatic API documentation
+* Dependency management
+
+### 🚧 Currently Working On
+
+Backend API development and document upload pipeline.
+
+---
+
+# 📂 Repository Structure
+
+```text
 project-recall/
 │
+├── backend/
+│   ├── main.py
+│   ├── requirements.txt
+│   └── venv/                 # Local environment (ignored by Git)
+│
+├── docs/
+│   └── development-log.md
+│
+├── .gitignore
 └── README.md
 ```
 
-The repository structure will evolve as development progresses.
+---
+
+# 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Tanu-shree-Tandon/project-recall.git
+```
+
+Move into the backend directory:
+
+```bash
+cd project-recall/backend
+```
+
+Create a virtual environment:
+
+```bash
+python -m venv venv
+```
+
+Activate it (Windows):
+
+```bash
+venv\Scripts\activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the development server:
+
+```bash
+uvicorn main:app --reload
+```
+
+Visit:
+
+Backend API
+
+```text
+http://127.0.0.1:8000
+```
+
+Interactive API Documentation
+
+```text
+http://127.0.0.1:8000/docs
+```
 
 ---
 
-## Development Approach
+# 🗺️ Roadmap
 
-Project Recall is being developed incrementally. Each feature will be implemented, tested, documented, and committed before moving to the next milestone.
+## Phase 1 — Backend Foundation ✅
+
+* Repository setup
+* FastAPI configuration
+* Initial API
+
+## Phase 2 — Document Processing
+
+* PDF upload
+* PDF storage
+* Text extraction
+
+## Phase 3 — AI Integration
+
+* Document embeddings
+* Semantic search
+* Context retrieval
+
+## Phase 4 — Context Reconstruction
+
+* AI-generated project summaries
+* Research timeline reconstruction
+* Next-step recommendations
+
+## Phase 5 — User Experience
+
+* Dashboard
+* Upload interface
+* Search interface
+* Project workspace
 
 ---
 
-## License
+# 🌟 Vision Beyond the Hackathon
 
-This project is currently under active development as part of the **ML Empowerment Build Challenge 2.0**.
+The **ML Empowerment Build Challenge** serves as the starting point for Project Recall.
+
+The long-term goal is to build a scalable AI research workspace that enables students, researchers, and professionals to resume complex projects without manually reconstructing previous work from scattered notes and documents.
+
+Rather than being a one-time hackathon submission, Project Recall is intended to evolve into a long-term portfolio project and a production-ready AI application.
+
+---
+
+# 👩‍💻 Author
+
+**Tanu Shree Tandon**
+
+Second-Year BCA (Data Science) Student
+
+Building Project Recall as a flagship AI/ML portfolio project while participating in the **ML Empowerment Build Challenge**.
