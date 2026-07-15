@@ -2,7 +2,7 @@
 
 > **An AI-powered research workspace that helps students and researchers instantly regain project context after returning to an ongoing project.**
 
-🚀 **Project Recall** is being built as part of the **ML Empowerment Build Challenge**, with the vision of growing beyond a hackathon MVP into a production-ready AI research assistant.
+🚀 **Project Recall** is being built as part of the **ML Empowerment Build Challenge 2.0**, with the vision of growing beyond a hackathon MVP into a production-ready AI research assistant.
 
 Instead of spending hours trying to remember previous progress, Project Recall reconstructs project context from research papers, notes, and supporting documents—allowing users to continue their work exactly where they left off.
 
@@ -93,23 +93,44 @@ The initial MVP focuses on validating the core concept through the following wor
 
 # 📈 Current Project Status
 
+## Current Development Phase
+
+**Phase:** Backend Foundation
+
 ### ✅ Completed
 
-* Project planning
-* Hackathon registration
-* GitHub repository setup
-* Professional project documentation
-* Backend development environment
-* Python virtual environment
-* FastAPI backend initialization
-* First REST API endpoint
-* Automatic API documentation
-* Dependency management
+#### Project Foundation
 
-### 🚧 Currently Working On
+* Hackathon registration completed *(ML Empowerment Build Challenge 2.0)*
+* GitHub repository initialized and configured
+* Professional project documentation established
+* Development log introduced for progress tracking
 
-Backend API development and document upload pipeline.
+#### Development Environment
 
+* Python virtual environment configured
+* Dependency management using `requirements.txt`
+* Git version control workflow established
+* Project structure organized for scalable development
+
+#### Backend Development
+
+* FastAPI backend initialized
+* Automatic interactive API documentation enabled via Swagger UI (`/docs`)
+* Core API routing implemented
+* Static API endpoints created
+* Dynamic path parameter handling implemented
+* Query parameter handling implemented
+* First POST endpoint developed
+* Request validation implemented using Pydantic models
+
+### 🎯 Current Focus
+
+Building the document ingestion pipeline for research papers and project documents.
+
+### 🚀 Next Milestone
+
+Implement PDF upload functionality and establish the document processing workflow.
 ---
 
 # 📂 Repository Structure
@@ -118,15 +139,21 @@ Backend API development and document upload pipeline.
 project-recall/
 │
 ├── backend/
-│   ├── main.py
-│   ├── requirements.txt
-│   └── venv/                 # Local environment (ignored by Git)
+│   ├── main.py                 # FastAPI application
+│   ├── requirements.txt        # Project dependencies
+│   └── venv/                   # Local virtual environment (Git ignored)
 │
 ├── docs/
-│   └── development-log.md
+│   └── development-log.md      # Development journal
 │
-├── .gitignore
-└── README.md
+├── .gitignore                  # Git ignore rules
+│
+└── README.md                   # Project documentation
+```
+
+> **Note:** This structure represents the current backend foundation. As Project Recall evolves, additional modules for document processing, AI services, vector databases, configuration management, and the frontend will be introduced while maintaining a scalable project architecture.
+
+
 ```
 
 ---
